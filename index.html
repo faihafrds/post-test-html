@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+          background-color: rgb(202, 220, 226);
+        }
+        
+        h1 {
+          color: rgb(0, 0, 0);
+          text-align: center;
+          font-family: Helvetica;
+        }
+        
+        h2 {
+          font-family: Helvetica;
+          font-size: 20px;
+          text-align: center;
+        }
+        input[type=text] {
+        margin: 8px 0;
+        border-radius: 4px;
+        }
+        textarea {
+        margin: 8px 0;
+        border-radius: 4px;   
+        }
+        label {
+        font-family: Helvetica;   
+        }
+        input[type=date] {
+        margin: 8px 0;
+        border-radius: 4px;   
+        }
+        input[type=checkbox] {
+        margin: 8px 0;  
+        }
+        input[type=radio] {
+        margin: 8px 0;  
+        }
+        select {
+        margin: 8px 0;
+        border-radius: 4px;   
+        }
+        input[type=submit] {
+        margin: 8px 0px;
+        border-radius: 8px; 
+        background-color: #2059c4;
+        color: white;
+        }
+        </style>
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran</h1>
+    <form action="" method="post">
+      <table style="margin-left:auto;margin-right:auto" >
+        <tr>
+          <td>
+            <label class="" class="label-input" for="fullname">Nama Lengkap</label>
+          </td>
+          <td>:</td>
+          <td><input type="text" name="fullname" id="fullname" /></td>
+        </tr>
+        <tr>
+            <td>
+              <label class="" class="label-input" for="name">Nama Panggilan</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="name" id="name" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="gender" id="male" />
+              <label class="" for="male">Laki-laki</label>
+              <br />
+              <input type="radio" name="gender" id="female" />
+              <label class="" for="female">Perempuan</label>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="birthplace">Tempat Lahir</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="birthplace" id="birthplace" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="birthdate">Tanggal Lahir</label>
+            </td>
+            <td>:</td>
+            <td><input type="date" name="birthdate" id="birthdate" /></td>
+          </tr>
+          <tr>
+            <td><label class="" for="agama">Agama</label></td>
+            <td>:</td>
+            <td>
+              <select name="agama" id="agama">
+                <option value="">---------Agama---------</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="Kewarganegaraan">Kewarganegaraan</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="Kewarganegaraan" id="Kewarganegaraan" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="Anak Ke-">Anak Ke-</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="Anak Ke-" id="Anak Ke-" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="Jumlah Saudara">Jumlah Saudara</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="Jumlah Saudara" id="Jumlah Saudara" /></td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="status" id="kawin" />
+              <label class="" for="kawin">Kawin</label>
+              <br />
+              <input type="radio" name="gender" id="belumkawin" />
+              <label class="" for="belumkawin">Belum Kawin</label>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis SIM</td>
+            <td>:</td>
+            <td>
+              <input type="checkbox" name="sim1" id="sim1" />
+              <label class="" for="sim1">SIM A</label>
+              <input type="checkbox" name="sim2" id="sim2" />
+              <label class="" for="sim2">SIM B</label>
+              <input type="checkbox" name="sim3" id="sim3" />
+              <label class="" for="sim3">SIM C</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="" for="alamat">Alamat Lengkap</label></td>
+            <td>:</td>
+            <td>
+              <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="KTP">No. KTP</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="KTP" id="KTP" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="NoTelp">No. Telp/HP</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="NoTelp" id="NoTelp" /></td>
+          </tr>
+          <tr>
+            <td><label class="" for="alamat2">Alamat Lain</label></td>
+            <td>:</td>
+            <td>
+              <textarea name="alamat2" id="alamat2" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="NoTelp2">No. Telp/HP Lain</label>
+            </td>
+            <td>:</td>
+            <td><input type="text" name="NoTelp2" id="NoTelp2" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label class="" class="label-input" for="foto">Upload Pas Photo (2x3)</label>
+            </td>
+            <td>:</td>
+            <td><input type="file" name="foto" id="foto" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <input type="submit" value="submit" />
+            </td>
+          </tr>
+        </table>
+    </form>
+  </body>
+</html>
+          
+          
